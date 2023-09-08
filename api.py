@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-    """
-    python script
-    """
+"""
+python script
+"""
 from flask import Flask, jsonify, request
 from datetime import datetime
 
