@@ -1,8 +1,13 @@
+#!/usr/bin/env python3
+    """
+    python script
+    """
 from flask import Flask, jsonify, request
 from datetime import datetime
 
 
 app = Flask(__name__)
+
 
 @app.route('/', methods=['GET'])
 def user():
