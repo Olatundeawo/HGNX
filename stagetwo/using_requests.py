@@ -3,14 +3,12 @@
 """
 import requests
 
-url = 'https://olatundeawo.pythonanywhere.com/api'
+url = 'https://olatundeawo.pythonanywhere.com/api/4'
 
-data = {
-    4: {"name": "Tunde"}
-}
-response = requests.post(url, json=data)
+data = {'name': "Samson"}
+response = requests.delete(url)
 
-if response.status_code == 201:
+if response.status_code == 204:
     created_post = response.json()
     print(created_post)
 else:
